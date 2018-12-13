@@ -18,8 +18,8 @@ def base():
 def scheme():
     return render_template('JinAnn/scheme.html')
 
-@app.route("/home")
-def profile():
+@app.route('/home')
+def home():
     return render_template('homepage.html')
 
 @app.route("/profile")
