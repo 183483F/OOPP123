@@ -14,10 +14,13 @@ app.config.from_mapping(
 def base():
     return render_template('JinAnn/scheme2.html')
 
-
 @app.route('/scheme')
 def scheme():
     return render_template('JinAnn/scheme.html')
+
+@app.route("/home")
+def profile():
+    return render_template('homepage.html')
 
 @app.route("/profile")
 def profile():
